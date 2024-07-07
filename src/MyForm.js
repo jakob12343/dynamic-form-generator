@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import DynamicForm from './DynamicForm';
 
-// Simplified JSON Configuration for Signup Form
+// Updated JSON Configuration for Signup Form
 const signupFormConfig = [
-  { placeholder: 'Enter your username', type: 'text' },
-  { placeholder: 'Enter your email address', type: 'email' },
-  { placeholder: 'Enter your password', type: 'password' },
-  { placeholder: 'Confirm your password', type: 'password' }
+  { placeholder: 'Enter your username', type: 'text', required: true },
+  { placeholder: 'Enter your email address', type: 'email', required: false },
+  { placeholder: 'Enter your password', type: 'password', required: true },
+  { placeholder: 'Confirm your password', type: 'password', required: true }
 ];
 
 const MyForm = () => {
@@ -21,7 +21,7 @@ const MyForm = () => {
       formObject[key] = value;
     });
     setFormData(formObject);
-    console.log(formObject); // To check the data in the console
+    console.log(formObject); // Log the submitted data to the console for debugging
   };
 
   return (

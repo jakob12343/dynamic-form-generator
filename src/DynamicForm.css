@@ -1,3 +1,4 @@
+/* Styling for the dynamic form */
 .dynamic-form {
   max-width: 400px;
   margin: auto;
@@ -7,16 +8,25 @@
   background-color: #f9f9f9;
 }
 
+/* Styling for each form group (label + input) */
 .form-group {
   margin-bottom: 15px;
 }
 
+/* Styling for form labels */
 .form-group label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
+/* Styling for required asterisk */
+.required-asterisk {
+  color: red;
+  margin-left: 4px;
+}
+
+/* Styling for form inputs */
 .form-group input {
   width: 100%;
   padding: 10px;
@@ -25,6 +35,15 @@
   font-size: 16px;
 }
 
+/* Styling for error messages */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+}
+
+/* Styling for the submit button */
 .submit-button {
   width: 100%;
   padding: 10px;
